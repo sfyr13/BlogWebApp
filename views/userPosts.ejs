@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User posts</title>
+</head>
+<body>
+    <h1>My Blog Posts</h1>
+
+    <% if (posts.length === 0) { %>
+        <h2>There are no posts available</h2>
+    <% }else { %>
+        <% posts.forEach(post => {%>
+            <div>
+                <h2><%= post.title %></h2>
+                <p><%= post.content %></p>
+                <small>Created at: <%= post.createdAt %></small>
+                <hr>
+            </div>
+        <%})%>
+    <% } %>
+    <hr>
+    <a href="/">Back to Home</a>
+
+    
+</body>
+</html>
