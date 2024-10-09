@@ -46,5 +46,4 @@ app.listen(port, () => {
   });
 
 
-//continue on newPost.ejs and check index.ejs again
 
